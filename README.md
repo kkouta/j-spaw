@@ -9,6 +9,43 @@ J-SpAW コーパスは，話者照合と音声なりすまし検出を目的と�
 ## Description / 内容
 　(TBD)
 
+## On meta-labels
+
+* 収録部屋ID(実際には場所じゃなくて部屋の大きさを書く)
+    * `R1,r1`: 都立大室内
+    * `R2,r2`: 都立大屋外 
+    * `R3,r3`: 東大室内
+    * `R4,r4`: 東大屋外
+* 再生機器
+    * `S1,s1`: bose
+    * `S2,s2`: iPad
+    * `S3,s3`: MacBook Pro
+    * `S4,s4`: Sony
+* 収録機器
+    * `M1,m1`: pixel
+    * `M2,m2`: iPhone
+    * `M3,m3`: iPad
+* 収録環境
+    * `E1,e1`: 無音
+    * `E2,e2`: 空調
+    * `E3,e3`: 音楽
+    * `E4,e4`: 屋外
+* `spoof`: key. It can be
+    * `bonafide`: bona fide
+    * `spoof`: spoof
+* `notrim`: whether non-speech frames are 
+
+L2がtts
+trimmed. It can be
+    * `notrim`:  not trimmed
+    * `trim`: trimmed
+* `eval`: name of subset. It can be
+    * `eval`: evaluation subset
+    * `progress`: progress subset
+    * `hidden`: hidden subset (there non-speech frames are trimmed)
+
+
+
 ## Terms of use / 使い方
 - Non-commercial purpose only / 非商用利用に限る
 
